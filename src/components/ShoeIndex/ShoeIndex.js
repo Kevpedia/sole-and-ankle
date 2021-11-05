@@ -24,7 +24,7 @@ const ShoeIndex = ({ sortId, setSortId }) => {
           </FlexSelect>
         </Header>
         <Spacer size={34} />
-        {/* <ShoeGrid /> */}
+        <ShoeGrid />
       </MainColumn>
       <LeftColumn>
         <Breadcrumbs>
