@@ -27,11 +27,12 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  padding: 18px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
   display: flex;
-  align-items: center;
+  align-items: baseline;
   height: 72px;
+  gap: 32px;
 `;
 
 const Nav = styled.nav`
