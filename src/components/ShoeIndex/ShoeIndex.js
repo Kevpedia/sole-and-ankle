@@ -15,13 +15,13 @@ const ShoeIndex = ({ sortId, setSortId }) => {
       <MainColumn>
         <Header>
           <Title>Running</Title>
-          <Select
+          <FlexSelect
             label='Sort'
             value={sortId}
             onChange={(ev) => setSortId(ev.target.value)}>
             <option value='newest'>Newest Releases</option>
             <option value='price'>Price</option>
-          </Select>
+          </FlexSelect>
         </Header>
         <Spacer size={34} />
         {/* <ShoeGrid /> */}
@@ -43,21 +43,35 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: baseline;
   gap: 32px;
 `;
 
-const LeftColumn = styled.div``;
+const LeftColumn = styled.div`
+  flex-basis: 248px;
+`;
 
 const MainColumn = styled.div`
   flex: 1;
   margin-left: auto;
 `;
 
-const Header = styled.header``;
+const Header = styled.header`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+`;
 
 const Title = styled.h2`
   font-size: 1.5rem;
   font-weight: ${WEIGHTS.medium};
+`;
+
+const FlexSelect = styled(Select)`
+  display: flex;
+  padding: 32px;
 `;
 
 export default ShoeIndex;
