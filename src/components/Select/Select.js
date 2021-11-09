@@ -67,11 +67,6 @@ const DisplayedBit = styled.span`
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
   }
-
-  ${ShoeIndex} & {
-    color: red;
-    background-color: red;
-  }
 `;
 
 const ChevronIcon = styled(Icon)`
