@@ -56,7 +56,7 @@ const Link = styled.a`
 `;
 
 const Wrapper = styled.article`
-  width: 340px;
+  /* width: 340px; */
 `;
 
 const ImageWrapper = styled.div`
